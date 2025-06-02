@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  background: linear-gradient(155deg, #39e000, #00e06a, #00e01e, #00e0b6);
+  max-width: 800px;
+  min-height: 500px;
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+
+  animation: Animation 5s ease infinite;
+
+  overflow-x: hidden;
+}
+
+@keyframes Animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
